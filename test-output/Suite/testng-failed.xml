@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Verify login functionality by passing valid username and password(failed)">
+    <parameter name="BrowserName" value="ff"/>
+    <parameter name="PASSWORD" value="passw0rd"/>
+    <parameter name="USERNAME" value="dummyfm"/>
+    <parameter name="WEBdriverPATH" value=""/>
+    <parameter name="rid" value="R-1"/>
+    <parameter name="tcid" value="TC-1"/>
+    <parameter name="URL" value="http://localhost:90/finsys"/>
+    <classes>
+      <class name="TestCases.US_SBDC_1000_TC0001">
+        <methods>
+          <include name="Execute" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.US_SBDC_1000_TC0001 -->
+    </classes>
+  </test> <!-- Verify login functionality by passing valid username and password(failed) -->
+  <test name="Verify Creation of a New Company by passing all Valid Details(failed)">
+    <parameter name="BrowserName" value="ff"/>
+    <parameter name="EmailId" value="asd@gjb.com"/>
+    <parameter name="WEBdriverPATH" value=""/>
+    <parameter name="CompanyType" value="IT"/>
+    <parameter name="City" value="MUMBAI"/>
+    <parameter name="rid" value="R-1"/>
+    <parameter name="URL" value="http://localhost:90/finsys"/>
+    <parameter name="CompanyName" value="ybage03"/>
+    <parameter name="PanDetails" value="WEr1234567"/>
+    <parameter name="PASSWORD" value="passw0rd"/>
+    <parameter name="TinDetails" value="1234567891"/>
+    <parameter name="State" value="MAHARASHTRA"/>
+    <parameter name="USERNAME" value="dummyfm"/>
+    <parameter name="Country" value="INDIA"/>
+    <parameter name="tcid" value="TC-2"/>
+    <classes>
+      <class name="TestCases.US_SBDC_1001_TC0002">
+        <methods>
+          <include name="CreateCompany" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.US_SBDC_1001_TC0002 -->
+    </classes>
+  </test> <!-- Verify Creation of a New Company by passing all Valid Details(failed) -->
+</suite> <!-- Failed suite [Suite] -->

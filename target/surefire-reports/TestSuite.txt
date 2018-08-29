@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.99 sec <<< FAILURE! - in TestSuite
+Execute(TestCases.US_SBDC_1000_TC0001)  Time elapsed: 0.233 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Build info: version: '3.2.0', revision: '8c03df6b79', time: '2017-02-23 10:51:31 +0000'
+System info: host: 'DESKTOP-QA8EEE9', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at ejagruti.finsys.modules.LaunchApp.LaunchApplication(LaunchApp.java:39)
+	at TestCases.US_SBDC_1000_TC0001.Execute(US_SBDC_1000_TC0001.java:15)
+
+CreateCompany(TestCases.US_SBDC_1001_TC0002)  Time elapsed: 0.04 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at ejagruti.finsys.pageobject.companymanage.<init>(companymanage.java:17)
+	at ejagruti.finsys.modules.createcompanymodule.<init>(createcompanymodule.java:20)
+	at TestCases.US_SBDC_1001_TC0002.CreateCompany(US_SBDC_1001_TC0002.java:44)
+
+CreateCompany(TestCases.US_SBDC_1001_TC0003)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at ejagruti.finsys.pageobject.companymanage.<init>(companymanage.java:17)
+	at ejagruti.finsys.modules.createcompanymodule.<init>(createcompanymodule.java:20)
+	at TestCases.US_SBDC_1001_TC0003.CreateCompany(US_SBDC_1001_TC0003.java:53)
+

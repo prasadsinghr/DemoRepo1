@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  
+  <test name="Verify login functionality by passing valid username and password">
+  <parameter name="rid" value="R-1"></parameter>
+  <parameter name="tcid" value="TC-1"></parameter>
+  <parameter name="BrowserName" value="ff"></parameter>
+  <parameter name="URL" value="http://localhost:90/finsys"></parameter>
+  <parameter name="USERNAME" value="dummyfm"></parameter>
+  <parameter name="PASSWORD" value="passw0rd"></parameter>
+  <parameter name="WEBdriverPATH" value=""></parameter>
+  <classes>
+  <class name="TestCases.US_SBDC_1000_TC0001"></class>
+  </classes>
+  </test>  
+
+  <test name="Verify Creation of a New Company by passing all Valid Details">
+  <parameter name="rid" value="R-1"></parameter>
+  <parameter name="tcid" value="TC-2"></parameter>
+  <parameter name="BrowserName" value="ff"></parameter>
+  <parameter name="URL" value="http://localhost:90/finsys"></parameter>
+  <parameter name="USERNAME" value="dummyfm"></parameter>
+  <parameter name="PASSWORD" value="passw0rd"></parameter>
+  <parameter name="WEBdriverPATH" value=""></parameter>
+  <parameter name="CompanyName" value="ybage03"></parameter>
+  <parameter name="CompanyType" value="IT"></parameter>
+  <parameter name="PanDetails" value="WEr1234567"></parameter>
+  <parameter name="EmailId" value="asd@gjb.com"></parameter>
+  <parameter name="TinDetails" value="1234567891"></parameter>
+  <parameter name="Country" value="INDIA"></parameter>
+  <parameter name="State" value="MAHARASHTRA"></parameter>
+  <parameter name="City" value="MUMBAI"></parameter>
+  <classes>
+  <class name="TestCases.US_SBDC_1001_TC0002"></class>
+  </classes>
+  </test>  
+
+  <test name="Verify New Company name is updated by passing all Valid Details">
+  <parameter name="rid" value="R-3"></parameter>
+  <parameter name="tcid" value="TC-3"></parameter>
+  <parameter name="BrowserName" value="ff"></parameter>
+  <parameter name="URL" value="http://localhost:90/finsys"></parameter>
+  <parameter name="USERNAME" value="dummyfm"></parameter>
+  <parameter name="PASSWORD" value="passw0rd"></parameter>
+  <parameter name="WEBdriverPATH" value=""></parameter>
+  <parameter name="CompanyName" value="Cyb03"></parameter>
+  <classes>
+  <class name="TestCases.US_SBDC_1001_TC0003"></class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
