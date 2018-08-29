@@ -27,25 +27,27 @@ public class TestCaseListener implements ITestListener
 
 	public void onTestFailure(ITestResult fail) 
 	{
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
+		
 		System.out.println(fail.getName()+" Test Step Failure ");
 	}
 
 	public void onTestSkipped(ITestResult skipped) 
 	{
 		// TODO Auto-generated method stub
-		System.out.println(skipped.getName()+" on Test Step skipped ");
+		System.out.println(skipped.getName()+"On Test Step skipped");
 	}
 
 	public void onTestStart(ITestResult start) 
 	{
 		// TODO Auto-generated method stub
-		System.out.println( start.getName() +" Test step start ");
+		System.out.println( start.getName() +"Test step start");
 	}
 
 	public void onTestSuccess(ITestResult success) 
 	{
 		// TODO Auto-generated method stub
+	System.out.println();
 		System.out.println(success.getName()+" Test Step success ");
 	}
 
