@@ -12,6 +12,7 @@ public class US_SBDC_1000_TC0001
 	@Parameters({"BrowserName","URL","USERNAME","PASSWORD","WEBdriverPATH"})
 	public void Execute(String BrowserName,String Url,String username,String Password,String WebDriverExePath)
 	{
+		system.out.println("just to test");
 		LaunchApp.LaunchApplication(BrowserName, Url, WebDriverExePath);
 		loginmodule lp=new loginmodule(config.driver);
 		lp.EnterValidUserName(username);
